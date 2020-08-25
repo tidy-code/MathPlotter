@@ -11,7 +11,8 @@ label {
     margin: 5px;
     display: inline-block;
 }
-.function-input {
+input[type="text"],
+input[type="number"] {
     font-size: 22px;
     line-height: 1.6em;
     margin: 10px;
@@ -19,11 +20,14 @@ label {
     text-align: center;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-family: "Times new roman";
     outline: none;
     transition: all 0.2s ease;
 }
-.function-input:focus {
+.function-input {
+    font-family: "Times new roman";
+}
+input[type="text"]:focus,
+input[type="number"]:focus {
     border: 1px solid darkmagenta;
 }
 input[type="submit"] {

@@ -1,0 +1,39 @@
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+canvas {
+    border: 1px dashed darkmagenta;
+}
+label {
+    user-select: none;
+    margin: 5px;
+    display: inline-block;
+}
+.function-input {
+    font-size: 22px;
+    line-height: 1.6em;
+    margin: 10px;
+    padding: 0 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: "Times new roman";
+    outline: none;
+    transition: all 0.2s ease;
+}
+.function-input:focus {
+    border: 1px solid darkmagenta;
+}
+input[type="submit"] {
+    border: none;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 0 20px;
+    border-radius: 5px;
+    line-height: 1.6em;
+    background-color: DarkMagenta;
+    color: white;
+    margin: 5px;
+}

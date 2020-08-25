@@ -40,7 +40,7 @@ function PlotAll(plot, ctx, skewX = 15) {
             drawer: drawLine,
         })
     );
-    console.log(plot);
+
     renderLegends({ plot });
 }
 
@@ -80,7 +80,7 @@ const colorCheckbox = Input({
     checked: customColor,
     onChange: (e) => {
         customColor = e.target.checked;
-        console.log(customColor);
+
         colorInput.render({
             style: "display: " + (customColor ? "inline-block" : "none"),
         });
@@ -95,7 +95,6 @@ const skewXInput = Input({
     onInput: (e) => {
         skewXValue = e.target.value;
         PlotAll([...plot, ...userDefinedPlots], ctx, +skewXValue);
-        console.log(e.target.value);
     },
 });
 
